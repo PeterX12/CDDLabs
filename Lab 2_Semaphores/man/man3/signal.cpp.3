@@ -1,0 +1,44 @@
+.TH "signal.cpp" 3 "Wed Nov 4 2020" "Version 0.9" "Lab 2 Signalling with Semaphores" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+signal.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Semaphore\&.h'\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <thread>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBtaskOne\fP (std::shared_ptr< \fBSemaphore\fP > theSemaphore, int delay)"
+.br
+.ti -1c
+.RI "void \fBtaskTwo\fP (std::shared_ptr< \fBSemaphore\fP > theSemaphore)"
+.br
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int main (void)"
+< Launch the threads 
+.br
+.PP
+< Wait for the threads to finish
+.SS "void taskOne (std::shared_ptr< \fBSemaphore\fP > theSemaphore, int delay)"
+displays a message first 
+.SS "void taskTwo (std::shared_ptr< \fBSemaphore\fP > theSemaphore)"
+displays a message second 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab 2 Signalling with Semaphores from the source code\&.

@@ -1,0 +1,44 @@
+.TH "main.cpp" 3 "Wed Nov 4 2020" "Version 0.9" "Lab 2 Signalling with Semaphores" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Semaphore\&.h'\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <thread>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBtaskOne\fP (std::shared_ptr< \fBSemaphore\fP > theSemaphore, int delay)"
+.br
+.ti -1c
+.RI "void \fBtaskTwo\fP (std::shared_ptr< \fBSemaphore\fP > theSemaphore)"
+.br
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int main (void)"
+< Launch the threads 
+.br
+.PP
+< Wait for the threads to finish
+.SS "void taskOne (std::shared_ptr< \fBSemaphore\fP > theSemaphore, int delay)"
+This method will sleep for the specified length of time and then print 'I must print first'\&. It does this thanks to the last line\&. When thread on get's to the end it signal and Thread 2 can proceed\&. 
+.SS "void taskTwo (std::shared_ptr< \fBSemaphore\fP > theSemaphore)"
+displays a message second\&. When thread 2 reached the first line it will find the value 0\&. It will then wait for for this value to change\&. This means that taskTwo cannot execute before taskOne signals 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab 2 Signalling with Semaphores from the source code\&.

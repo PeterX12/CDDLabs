@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_signal" kind="class" language="C++" prot="public">
+    <compoundname>Signal</compoundname>
+    <briefdescription>
+<para>An Implementation of Threads Using Semaphores. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Author: Peter Lucan Student Number: C00228946 Date: 03/11/2020 Name :Lab Two - Signalling with Semaphores Decription: Uses a <ref refid="class_semaphore" kindref="compound">Semaphore</ref> which ensures that one thread finished it&apos;s actions beore another thread can begin.</para>
+<para>Uses C++11 features such as mutex and condition variables to implement Semaphores in thread functions</para>
+<para>Uses C++11 features such as mutex and condition variables to implement Semaphores in thread functions </para>
+    </detaileddescription>
+    <location file="main.cpp" line="12" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

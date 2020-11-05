@@ -1,0 +1,48 @@
+.TH "Semaphore" 3 "Thu Nov 5 2020" "Version 0.9" "Lab 3 - Rendezvous" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Semaphore \- A \fBSemaphore\fP Implementation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Semaphore\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSemaphore\fP (unsigned int uiCount=0)"
+.br
+.ti -1c
+.RI "void \fBWait\fP ()"
+.br
+.ti -1c
+.RI "template<typename R , typename P > bool \fBWait\fP (const std::chrono::duration< R, P > &crRelTime)"
+.br
+.ti -1c
+.RI "void \fBSignal\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A \fBSemaphore\fP Implementation\&. 
+
+Uses C++11 features such as mutex and condition variables to implement \fBSemaphore\fP 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Semaphore::Semaphore (unsigned int uiCount = \fC0\fP)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Semaphore::Signal ()"
+
+.SS "void Semaphore::Wait ()"
+
+.SS "template<typename R , typename P > bool Semaphore::Wait (const std::chrono::duration< R, P > & crRelTime)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab 3 - Rendezvous from the source code\&.

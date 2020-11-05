@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes refid="_semaphore_8h" local="yes">Semaphore.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">chrono</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>condition_variable</label>
+      </node>
+      <node id="2">
+        <label>Semaphore.h</label>
+        <link refid="_semaphore_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>mutex</label>
+      </node>
+      <node id="5">
+        <label>chrono</label>
+      </node>
+      <node id="7">
+        <label>thread</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a9141e3eb0b1274e58b053fd8a60a94e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void taskOne</definition>
+        <argsstring>(std::shared_ptr&lt; Semaphore &gt; firstSem, std::shared_ptr&lt; Semaphore &gt; secondSem, int delay)</argsstring>
+        <name>taskOne</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_semaphore" kindref="compound">Semaphore</ref> &gt;</type>
+          <declname>firstSem</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_semaphore" kindref="compound">Semaphore</ref> &gt;</type>
+          <declname>secondSem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>displays a message that is split in to 2 sections to show how a rendezvous works </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="20" column="6" bodyfile="main.cpp" bodystart="20" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1ac7cb6b39082835c7e3c853c42af9ecdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void taskTwo</definition>
+        <argsstring>(std::shared_ptr&lt; Semaphore &gt; firstSem, std::shared_ptr&lt; Semaphore &gt; secondSem, int delay)</argsstring>
+        <name>taskTwo</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_semaphore" kindref="compound">Semaphore</ref> &gt;</type>
+          <declname>firstSem</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_semaphore" kindref="compound">Semaphore</ref> &gt;</type>
+          <declname>secondSem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>displays a message that is split in to 2 sections to show how a rendezvous works </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="29" column="6" bodyfile="main.cpp" bodystart="29" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Launch the threads <linebreak/>
+</para>
+        </inbodydescription>
+        <location file="main.cpp" line="38" column="5" bodyfile="main.cpp" bodystart="38" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_semaphore_8h" kindref="compound">Semaphore.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a9141e3eb0b1274e58b053fd8a60a94e3" kindref="member">taskOne</ref>(std::shared_ptr&lt;Semaphore&gt;<sp/>firstSem,std::shared_ptr&lt;Semaphore&gt;<sp/><sp/>secondSem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>delay){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>std::this_thread::sleep_for(std::chrono::seconds(delay));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;Task<sp/>One<sp/>has<sp/>arrived!<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//THIS<sp/>IS<sp/>THE<sp/>RENDEZVOUS<sp/>POINT!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>firstSem-&gt;Signal();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>secondSem-&gt;Wait();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Task<sp/>One<sp/>has<sp/>left!&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ac7cb6b39082835c7e3c853c42af9ecdc" kindref="member">taskTwo</ref>(std::shared_ptr&lt;Semaphore&gt;<sp/>firstSem,<sp/>std::shared_ptr&lt;Semaphore&gt;<sp/>secondSem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>delay){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>std::this_thread::sleep_for(std::chrono::seconds(delay));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;Task<sp/>Two<sp/>has<sp/>arrived<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//THIS<sp/>IS<sp/>THE<sp/>RENDEZVOUS<sp/>POINT!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>secondSem-&gt;Signal();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>firstSem-&gt;Wait();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Task<sp/>Two<sp/>has<sp/>left<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>std::thread<sp/>threadOne,<sp/>threadTwo;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;Semaphore&gt;<sp/>sem1(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_semaphore" kindref="compound">Semaphore</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;Semaphore&gt;<sp/>sem2(<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_semaphore" kindref="compound">Semaphore</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>taskOneDelay=5;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>taskTwoDelay=1;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>threadOne=std::thread(<ref refid="main_8cpp_1ac7cb6b39082835c7e3c853c42af9ecdc" kindref="member">taskTwo</ref>,sem1,sem2,taskTwoDelay);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>threadTwo=std::thread(<ref refid="main_8cpp_1a9141e3eb0b1274e58b053fd8a60a94e3" kindref="member">taskOne</ref>,sem1,sem2,taskOneDelay);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Launched<sp/>from<sp/>the<sp/>main\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>threadOne.join();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>threadTwo.join();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="main.cpp"/>
+  </compounddef>
+</doxygen>

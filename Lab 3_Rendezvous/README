@@ -1,0 +1,19 @@
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+
+Title: Lab 3 - Rendezvous
+
+Author: Peter Lucan, 4th Year Software Development student at IT Carlow, 
+
+Student Number: C00228946
+
+Description:This is the Third lab. This lab is about using Semaphores to make a checkpoint for threads. This is called the Rendezvous pattern. A rendezvoud pattern occurs between two threads when there is a point (in the code) that both threads must reach before either can continue. (A meeting point or checkpoint).
+
+Dependencies:
+gcc v 7.5.0 or greater
+Make
+
+Install:
+run "make ALL in directory with code."
+
+Usage:
+type "./main" to run

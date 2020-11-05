@@ -1,0 +1,43 @@
+.TH "main.cpp" 3 "Thu Nov 5 2020" "Version 0.9" "Lab 3 - Rendezvous" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Semaphore\&.h'\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <thread>\fP
+.br
+\fC#include <chrono>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBtaskOne\fP (std::shared_ptr< \fBSemaphore\fP > firstSem, std::shared_ptr< \fBSemaphore\fP > secondSem, int delay)"
+.br
+.ti -1c
+.RI "void \fBtaskTwo\fP (std::shared_ptr< \fBSemaphore\fP > firstSem, std::shared_ptr< \fBSemaphore\fP > secondSem, int delay)"
+.br
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int main (void)"
+< Launch the threads 
+.br
+
+.SS "void taskOne (std::shared_ptr< \fBSemaphore\fP > firstSem, std::shared_ptr< \fBSemaphore\fP > secondSem, int delay)"
+displays a message that is split in to 2 sections to show how a rendezvous works 
+.SS "void taskTwo (std::shared_ptr< \fBSemaphore\fP > firstSem, std::shared_ptr< \fBSemaphore\fP > secondSem, int delay)"
+displays a message that is split in to 2 sections to show how a rendezvous works 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lab 3 - Rendezvous from the source code\&.

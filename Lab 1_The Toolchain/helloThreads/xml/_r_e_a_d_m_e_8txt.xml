@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_r_e_a_d_m_e_8txt" kind="file" language="C++">
+    <compoundname>README.txt</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_r_e_a_d_m_e_8txt_1af8c51739037056f43238e6727fa733be" prot="public" static="no" mutable="no">
+        <type>This work is licensed under the Creative Commons Attribution NonCommercial NoDerivatives International License To view a copy of this</type>
+        <definition>This work is licensed under the Creative Commons Attribution NonCommercial NoDerivatives International License To view a copy of this license</definition>
+        <argsstring></argsstring>
+        <name>license</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="README.txt" line="1" column="134" bodyfile="README.txt" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_e_a_d_m_e_8txt_1a8b93af8f70cf63a11dfbe4f2bbf5d866" prot="public" static="no" mutable="no">
+        <type>This work is licensed under the Creative Commons Attribution NonCommercial NoDerivatives International License To view a copy of this visit</type>
+        <definition>This work is licensed under the Creative Commons Attribution NonCommercial NoDerivatives International License To view a copy of this visit http</definition>
+        <argsstring></argsstring>
+        <name>http</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="README.txt" line="1" column="148" bodyfile="README.txt" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_e_a_d_m_e_8txt_1a3f912188d7ea992e84a9a3ccf20c17e7" prot="public" static="no" mutable="no">
+        <type>This work is licensed under the Creative Commons Attribution NonCommercial NoDerivatives International License To view a copy of this visit Year Software Development student at IT</type>
+        <definition>This work is licensed under the Creative Commons Attribution NonCommercial NoDerivatives International License To view a copy of this visit Year Software Development student at IT Carlow</definition>
+        <argsstring></argsstring>
+        <name>Carlow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="README.txt" line="5" column="43" bodyfile="README.txt" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">This<sp/>work<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>Creative<sp/>Commons<sp/>Attribution-NonCommercial-NoDerivatives<sp/>4.0<sp/>International<sp/>License.<sp/>To<sp/>view<sp/>a<sp/>copy<sp/>of<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/><ref refid="_r_e_a_d_m_e_8txt_1af8c51739037056f43238e6727fa733be" kindref="member">license</ref>,<sp/>visit<sp/><ref refid="_r_e_a_d_m_e_8txt_1a8b93af8f70cf63a11dfbe4f2bbf5d866" kindref="member">http</ref>:</highlight><highlight class="comment">//creativecommons.org/licenses/by-nc-nd/4.0/.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">Title:<sp/>Lab<sp/>one:<sp/>HelloThreads<sp/>-<sp/>The<sp/>Toolchain</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">Author:<sp/>Peter<sp/>Lucan,<sp/>4th<sp/>Year<sp/>Software<sp/>Development<sp/>student<sp/>at<sp/>IT<sp/><ref refid="_r_e_a_d_m_e_8txt_1a3f912188d7ea992e84a9a3ccf20c17e7" kindref="member">Carlow</ref>,<sp/>C00228946</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">This<sp/>is<sp/>the<sp/>first<sp/>lab</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">Dependencies:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">gcc<sp/>v<sp/>7.5.0<sp/>or<sp/>greater</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">Make</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">Install:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">run<sp/></highlight><highlight class="stringliteral">&quot;make<sp/>ALL<sp/>in<sp/>directory<sp/>with<sp/>code.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">Usage:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">type<sp/></highlight><highlight class="stringliteral">&quot;./hellloThreads&quot;</highlight><highlight class="normal"><sp/>to<sp/>run</highlight></codeline>
+    </programlisting>
+    <location file="README.txt"/>
+  </compounddef>
+</doxygen>

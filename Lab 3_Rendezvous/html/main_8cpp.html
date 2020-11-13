@@ -93,7 +93,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
-</div><table class="memberdecls">
+</div>
+<p><a href="main_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9141e3eb0b1274e58b053fd8a60a94e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a9141e3eb0b1274e58b053fd8a60a94e3">taskOne</a> (std::shared_ptr&lt; <a class="el" href="class_semaphore.html">Semaphore</a> &gt; firstSem, std::shared_ptr&lt; <a class="el" href="class_semaphore.html">Semaphore</a> &gt; secondSem, int delay)</td></tr>
@@ -121,6 +123,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>&lt; Launch the threads <br  />
 </p>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00068">68</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -155,7 +159,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>displays a message that is split in to 2 sections to show how a rendezvous works </p>
+<p>The taskOne function</p>
+<p>This function Prints a message and then wait's for taskTwo to until it can finish.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">firstSem</td><td>Used to <a class="el" href="class_signal.html" title="An Implementation of a Rendezvous using Semaphores.">Signal</a> as part of a rendezvous </td></tr>
+    <tr><td class="paramname">secondSem</td><td>Used to make threads Wait as part of a rendezvous </td></tr>
+    <tr><td class="paramname">delay</td><td>Task sleeps for delay seconds before starting </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00042">42</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -190,7 +205,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>displays a message that is split in to 2 sections to show how a rendezvous works </p>
+<p>The taskTwo function</p>
+<p>This function waits for a specified amount of time. It waits for taskOne to print a it's first line then it prints it's line and then taskOne prints it's last line and this function then prints it's last line</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">firstSem</td><td>Used to make threads Wait as part of a rendezvous </td></tr>
+    <tr><td class="paramname">secondSem</td><td>Used to <a class="el" href="class_signal.html" title="An Implementation of a Rendezvous using Semaphores.">Signal</a> as part of a rendezvous </td></tr>
+    <tr><td class="paramname">delay</td><td>Task sleeps for delay seconds before starting </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00059">59</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>

@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['semaphore_2',['Semaphore',['../class_semaphore.html',1,'Semaphore'],['../class_semaphore.html#a0d9290d316636875ca85d1d78950a817',1,'Semaphore::Semaphore()']]],
-  ['semaphore_2ecpp_3',['Semaphore.cpp',['../_semaphore_8cpp.html',1,'']]],
-  ['semaphore_2eh_4',['Semaphore.h',['../_semaphore_8h.html',1,'']]],
-  ['signal_5',['Signal',['../class_signal.html',1,'Signal'],['../class_semaphore.html#a86f92f738b4486439b296d8e235895f2',1,'Semaphore::Signal()']]],
-  ['signal_2ecpp_6',['signal.cpp',['../signal_8cpp.html',1,'']]]
+  ['main_1',['main',['../main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;main.cpp'],['../signal_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;signal.cpp']]],
+  ['main_2ecpp_2',['main.cpp',['../main_8cpp.html',1,'']]]
 ];

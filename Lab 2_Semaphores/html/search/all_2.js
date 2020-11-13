@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['taskone_7',['taskOne',['../main_8cpp.html#a2b4729d561c345111ccab970fe11e229',1,'taskOne(std::shared_ptr&lt; Semaphore &gt; theSemaphore, int delay):&#160;main.cpp'],['../signal_8cpp.html#a2b4729d561c345111ccab970fe11e229',1,'taskOne(std::shared_ptr&lt; Semaphore &gt; theSemaphore, int delay):&#160;signal.cpp']]],
-  ['tasktwo_8',['taskTwo',['../main_8cpp.html#ae4ea9570be601d182fa473c7ca431852',1,'taskTwo(std::shared_ptr&lt; Semaphore &gt; theSemaphore):&#160;main.cpp'],['../signal_8cpp.html#ae4ea9570be601d182fa473c7ca431852',1,'taskTwo(std::shared_ptr&lt; Semaphore &gt; theSemaphore):&#160;signal.cpp']]]
+  ['semaphore_3',['Semaphore',['../class_semaphore.html',1,'Semaphore'],['../class_semaphore.html#a0d9290d316636875ca85d1d78950a817',1,'Semaphore::Semaphore()']]],
+  ['semaphore_2ecpp_4',['Semaphore.cpp',['../_semaphore_8cpp.html',1,'']]],
+  ['semaphore_2eh_5',['Semaphore.h',['../_semaphore_8h.html',1,'']]],
+  ['signal_6',['Signal',['../class_signal.html',1,'Signal'],['../class_semaphore.html#a86f92f738b4486439b296d8e235895f2',1,'Semaphore::Signal()']]],
+  ['signal_2ecpp_7',['signal.cpp',['../signal_8cpp.html',1,'']]]
 ];

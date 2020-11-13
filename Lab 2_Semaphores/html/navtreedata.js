@@ -23,6 +23,9 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Lab Two: Signalling with Semaphores", "index.html", [
+    [ "Decription", "index.html#desc_sec", null ],
+    [ "Dependencies", "index.html#dep_Sec", null ],
+    [ "Installation", "index.html#install_sec", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

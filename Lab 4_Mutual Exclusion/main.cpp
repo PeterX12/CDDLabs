@@ -1,3 +1,24 @@
+/*
+  This work is licensed under the Creative Commons Attribution-NonCommercial-   NoDerivatives 4.0 International License. To view a copy of this license, vi   si t http://creativecommons.org/licenses/by-nc-nd/4.0/.
+*/
+/*! \mainpage Lab 4 - Mutual Exclusion
+ * \author Peter Lucan, 4th Year Software Development student at IT Carlow,C00228946, c00228956@itcarlow.ie
+ * \copyright Creative Commons Attribution-NonCommercial- NoDerivatives 4.0 International License
+ * \section desc_sec Decription
+ *
+ * Description: This is the Fourth lab. A Mutex is used to ensure that only one thread acesses the shared variable at a time. This is achieved using two Semaphores
+ *
+ *
+ * \section dep_Sec Dependencies
+ * gcc v 7.5.0 or greater
+ Make
+ *
+ * \section install_sec Installation
+ * run "make ALL in directory with code."
+ *
+ *
+ *
+ */
 #include "Semaphore.h"
 #include <iostream>
 #include <thread>
@@ -15,12 +36,24 @@ int sharedVariable=0;
 
 */
 /*! displays a message that is split in to 2 sections to show how a rendezvous works*/
+/**
+ * The udpateTask function
+ *
+ * This function uses a hundread threads to increment a shared variable 1000 times each.
+ *Whichever thread gets to the wait first will be able
+ *to proceed immediately. Of course, the act of waiting on the semaphore has the
+ *effect of decrementing it, so the second thread to arrive will have to wait until
+ *the first signals.
+ * @param firstSem Used to implement a mutex lock
+ * @param numUpdares For loop executes for numupdates times
+ */
 void updateTask(std::shared_ptr<Semaphore> firstSem, int numUpdates){
 
- 
+
   for(int i=0;i<numUpdates;i++){
-    //UPDATE SHARED VARIABLE HERE!
+    firstSem->Wait();
     sharedVariable++;
+    firstSem->Signal();
   }
 
 }
@@ -28,7 +61,7 @@ void updateTask(std::shared_ptr<Semaphore> firstSem, int numUpdates){
 
 int main(void){
   std::vector<std::thread> vt(num_threads);
-  std::shared_ptr<Semaphore> aSemaphore( new Semaphore);
+  std::shared_ptr<Semaphore> aSemaphore( new Semaphore(1));
   /**< Launch the threads  */
   int i=0;
   for(std::thread& t: vt){

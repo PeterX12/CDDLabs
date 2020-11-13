@@ -1,21 +1,35 @@
-/*!
-    Author: Peter Lucan
-    Student Number: C00228946
-    Date: 03/11/2020
-    Name :Lab Two - Signalling with Semaphores
-    Decription: Uses a Semaphore which ensures that one thread finished it's actions beore another thread can begin.
-*/
+ /*
+   This work is licensed under the Creative Commons Attribution-NonCommercial-   NoDerivatives 4.0 International License. To view a copy of this license, vi   si t http://creativecommons.org/licenses/by-nc-nd/4.0/.
+  */
+ /*! \mainpage Lab Two: Signalling with Semaphores
+  * \author Peter Lucan
+  * \date 09 October 2020
+  * \copyright Creative Commons Attribution-NonCommercial- NoDerivatives 4.0 International License
+  * \section desc_sec Decription
+  *
+  * This is the Second lab. This lab is about using Semaphores to make on thread fully execute before another thread is allowed to execute.
+  *
+  * \section dep_Sec Dependencies
+  * gcc v 7.5.0 or greater
+  Make
+  *
+  * \section install_sec Installation
+  * run "make ALL in directory with code."
+  *
+  *
+  *
+  */
 #include "Semaphore.h"
 #include <iostream>
 #include <thread>
 #include <unistd.h>
-/*! \class Signal
-    \brief An Implementation of Threads Using Semaphores
-
-   Uses C++11 features such as mutex and condition variables to implement Semaphores in thread functions
-
-*/
-/*! This method will sleep for the specified length of time and then print "I must print first". It does this thanks to the last line. When thread on get's to the end it signal and Thread 2 can proceed.
+/**
+ * The taskOne function
+ *
+ * This function waits for a specified amount of time before printing some text. Thanks to the last line the function runs to completion first.
+ *
+ * @param theSemaphore Used to ensure this task runs to completion first!
+ * @param delay Task sleeps fpr delay seconds before starting
 */
 void taskOne(std::shared_ptr<Semaphore> theSemaphore, int delay){
   sleep(delay);
@@ -25,7 +39,13 @@ void taskOne(std::shared_ptr<Semaphore> theSemaphore, int delay){
   std::cout << "first"<<std::endl;
   theSemaphore->Signal();
 }
-/*! displays a message second. When thread 2 reached the first line it will find the value 0. It will then wait for for this value to change. This means that taskTwo cannot execute before taskOne signals*/
+/**
+ * The taskTwo function
+ *
+ * This function waits for the first function to signal before it runs.
+ *
+ * @param theSemaphore Used to ensure this task runs to completion first!
+ */
 void taskTwo(std::shared_ptr<Semaphore> theSemaphore){
   theSemaphore->Wait();
   std::cout <<"This ";

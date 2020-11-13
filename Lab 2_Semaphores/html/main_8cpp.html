@@ -150,7 +150,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This method will sleep for the specified length of time and then print "I must print first". It does this thanks to the last line. When thread on get's to the end it signal and Thread 2 can proceed. </p>
+<p>The taskOne function</p>
+<p>This function waits for a specified amount of time before printing some text. Thanks to the last line the function runs to completion first.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">theSemaphore</td><td>Used to ensure this task runs to completion first! </td></tr>
+    <tr><td class="paramname">delay</td><td>Task sleeps fpr delay seconds before starting </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -169,7 +177,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>displays a message second. When thread 2 reached the first line it will find the value 0. It will then wait for for this value to change. This means that taskTwo cannot execute before taskOne signals </p>
+<p>The taskTwo function</p>
+<p>This function waits for the first function to signal before it runs.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">theSemaphore</td><td>Used to ensure this task runs to completion first! </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

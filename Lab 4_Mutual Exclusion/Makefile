@@ -14,11 +14,8 @@ CFLAGS= -std=c++11 -pthread
 	$(CC) -c -o $@ $< $(CFLAGS) $(DEBUGFLAGS)
 
 ALL: main.o
-	$(CC) main.cpp Semaphore.cpp  $(CFLAGS) -o main  $(DEBUGFLAGS)
+	$(CC) main.cpp Semaphore.cpp  $(CFLAGS) -o mutualExclusion  $(DEBUGFLAGS)
+	rm *.o
 
 DEBUG: DEBUGFLAGS = -DDEBUG
 DEBUG: ALL
-
-#this is customary and just deletes all .o files
-CLEAN:
-	rm *.o

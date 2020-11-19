@@ -16,4 +16,4 @@ Install:
 run "make ALL in directory with code."
 
 Usage:
-type "./main" to run
+type "./mutualExclusion" to run

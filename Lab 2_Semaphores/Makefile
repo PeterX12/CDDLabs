@@ -14,7 +14,7 @@ CFLAGS= -std=c++11 -pthread
 	$(CC) -c -o $@ $< $(CFLAGS) $(DEBUGFLAGS)
 
 ALL: main.o
-	$(CC) main.cpp Semaphore.cpp  $(CFLAGS) -o main  $(DEBUGFLAGS)
+	$(CC) main.cpp Semaphore.cpp  $(CFLAGS) -o signal  $(DEBUGFLAGS)
 
 DEBUG: DEBUGFLAGS = -DDEBUG
 DEBUG: ALL

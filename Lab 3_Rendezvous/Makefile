@@ -15,10 +15,7 @@ CFLAGS= -std=c++11 -pthread
 
 ALL: main.o
 	$(CC) main.cpp Semaphore.cpp  $(CFLAGS) -o rendezvous  $(DEBUGFLAGS)
+	rm *.o
 
 DEBUG: DEBUGFLAGS = -DDEBUG
 DEBUG: ALL
-
-#this is customary and just deletes all .o files
-CLEAN:
-	rm *.o

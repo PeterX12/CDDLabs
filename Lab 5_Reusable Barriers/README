@@ -1,10 +1,19 @@
-The README file is a text file that explains what a project is.
-It should contain information on
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
 
-1. Project Licence
-2. Authors of Project
-3. How to install project
-4. List of any required Libraries, platform issues, etc.
-5. TO DO section listing items that need to be completed (errors, missing features etc.)
-6. List of files and what they contain
-7. Any other relevent information
+Title: Lab 5 - Resuable Barriers
+
+Author: Peter Lucan, 4th Year Software Development student at IT Carlow, 
+Student Number: C00228946
+Email: c00228946@itcarlow.ie
+
+Description: This is the fifth lab. This lab uses Semaphores to create a reusable barrier. THe barrier also know as a turnstile locks itself after all the threads have passed through it. A reusable barrier is used to synchronize threads that work together performing a series of steps in a loop.
+
+Dependencies:
+gcc v 7.5.0 or greater
+Make
+
+Install:
+run "make ALL in directory with code."
+
+Usage:
+type "./barrier" to run

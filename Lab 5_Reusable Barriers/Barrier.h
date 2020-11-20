@@ -1,15 +1,15 @@
 /* Barrier.h --- Barrier.h
  * 
  * Filename: Barrier.h
- * Description: 
+ * Description: The Barrier Class
  * Author: Joseph
- * Maintainer: 
+ * Maintainer: Peter Lucan
  * Created: Tue Jan  8 12:12:03 2019 (+0000)
  * Version: 
  * Package-Requires: ()
- * Last-Updated: Tue Jan  8 12:15:54 2019 (+0000)
- *           By: Joseph
- *     Update #: 2
+ * Last-Updated: Fri Dec  20 21:10:54 2020 (+0000)
+ *           By: Peter Lucan
+ *     Update #: 3
  * URL: 
  * Doc URL: 
  * Keywords: 
@@ -44,12 +44,20 @@
 
 /* Code: */
 #pragma once
+
+#include "Semaphore.h"
 class Barrier{
-  int numThreads;
+  int threadTotal;
+  int threadCount = 0;
+  Semaphore turnstileOne{0};
+  Semaphore turnstileTwo{1};
+  Semaphore theLock{1};
  public:
-  Barrier(int numThreads);
+  Barrier(int numThreads):threadTotal(numThreads){};
   virtual ~Barrier();
   void wait();  
+  void phaseOne();
+  void phaseTwo();
 };
 
 

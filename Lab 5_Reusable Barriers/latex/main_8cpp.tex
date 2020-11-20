@@ -1,0 +1,66 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include \char`\"{}Barrier.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a580d368c0a2a099cd3ad0c49deb1d3fa}{barrier\+Task}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_barrier}{Barrier}} $>$ the\+Barrier, int num\+Loops)
+\item 
+int \mbox{\hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a2d5b01367ae1267dfac47c7875aac5e4}{shared\+Variable}} =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a580d368c0a2a099cd3ad0c49deb1d3fa}\label{main_8cpp_a580d368c0a2a099cd3ad0c49deb1d3fa}} 
+\index{main.cpp@{main.cpp}!barrierTask@{barrierTask}}
+\index{barrierTask@{barrierTask}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{barrierTask()}{barrierTask()}}
+{\footnotesize\ttfamily void barrier\+Task (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_barrier}{Barrier}} $>$}]{the\+Barrier,  }\item[{int}]{num\+Loops }\end{DoxyParamCaption})}
+
+displays a message that is split in to 2 sections to show how a rendezvous works The barrier\+Task function
+
+This fucntion implements a reusable barrier. A specified number of threads prints A and the idex of the for loop and B and the idex of the for loop. The \mbox{\hyperlink{class_barrier}{Barrier}} ensures that they print in order. ie. All A0\textquotesingle{}s print first followed by B0\textquotesingle{}s then A1\textquotesingle{}s and B1\textquotesingle{}s and so on. All the threads execute at the first part of the for loop before the\+Barrier-\/$>$Phase\+Onene where they meet and then they all execute the second part of the code before the\+Barrier-\/$>$phase\+Two() where they meet again and pass through
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+Barrier} & Used to implement a reusable barrier lock \\
+\hline
+{\em num\+Loops} & For loop executes for num\+Loops times \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+$<$ Launch the threads ~\newline
+
+
+Definition at line 61 of file main.\+cpp.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_a2d5b01367ae1267dfac47c7875aac5e4}\label{main_8cpp_a2d5b01367ae1267dfac47c7875aac5e4}} 
+\index{main.cpp@{main.cpp}!sharedVariable@{sharedVariable}}
+\index{sharedVariable@{sharedVariable}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{sharedVariable}{sharedVariable}}
+{\footnotesize\ttfamily int shared\+Variable =0}
+
+
+
+Definition at line 29 of file main.\+cpp.
+

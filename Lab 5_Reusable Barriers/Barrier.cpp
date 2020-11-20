@@ -1,15 +1,15 @@
 // Barrier.cpp --- 
 // 
 // Filename: Barrier.cpp
-// Description: 
-// Author: Joseph
-// Maintainer: 
+// Description: Two functions which implement a barrier.
+// Author: Joeseph Kehoe
+// Maintainer: Peter Lucan
 // Created: Tue Jan  8 12:14:02 2019 (+0000)
 // Version: 
 // Package-Requires: ()
-// Last-Updated: Tue Jan  8 12:15:21 2019 (+0000)
-//           By: Joseph
-//     Update #: 2
+// Last-Updated: Fri Nov 20 21:06:21 2019 (+0000)
+//           By: Peter Lucan
+//     Update #: 3
 // URL: 
 // Doc URL: 
 // Keywords: 
@@ -46,7 +46,47 @@
 // Code:
 #include "Semaphore.h"
 #include "Barrier.h"
+#include <iostream>
 
+Barrier::~Barrier()
+{
+    /**Nothing to Do Here */
+}
+void Barrier::phaseOne()
+{
+   theLock.Wait();
+   ++threadCount;
+   if (threadCount == threadTotal)
+   {
+       std::cout << std::endl;
+       turnstileTwo.Wait();
+       turnstileOne.Signal();
+   }
+   theLock.Signal();
+   turnstileOne.Wait();
+   turnstileOne.Signal();
+   
+}//phaseOne
 
+void Barrier::phaseTwo()
+{
+    theLock.Wait();
+    --threadCount;
+    if(threadCount == 0)
+    {   
+        std::cout << std::endl;
+        std::cout << std::endl;
+        turnstileOne.Wait();
+        turnstileTwo.Signal();
+    }
+    theLock.Signal();
+    turnstileTwo.Wait();
+    turnstileTwo.Signal();
+}
+void Barrier::wait()
+{
+  phaseOne();
+  phaseTwo();  
+}
 // 
 // Barrier.cpp ends here

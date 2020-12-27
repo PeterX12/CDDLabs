@@ -1,0 +1,72 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Semaphore.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Safe\+Buffer.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a00660f0d55b4731f42a5ef5fbf527917}{producer}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_safe_buffer}{Safe\+Buffer}} $>$ stack, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_semaphore}{Semaphore}} $>$ mutex, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_semaphore}{Semaphore}} $>$ \mbox{\hyperlink{main_8cpp_a1510e7393f4dd5a16e31a088fdfbe88a}{consumer}}, int num\+Loops)
+\item 
+void \mbox{\hyperlink{main_8cpp_a1510e7393f4dd5a16e31a088fdfbe88a}{consumer}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_safe_buffer}{Safe\+Buffer}} $>$ stack, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_semaphore}{Semaphore}} $>$ mutex, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_semaphore}{Semaphore}} $>$ consumer, int num\+Loops)
+\item 
+int \mbox{\hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{main_8cpp_ac6027d2dbb9ac08b3b6729341c0bcf8f}{character}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a1510e7393f4dd5a16e31a088fdfbe88a}\label{main_8cpp_a1510e7393f4dd5a16e31a088fdfbe88a}} 
+\index{main.cpp@{main.cpp}!consumer@{consumer}}
+\index{consumer@{consumer}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{consumer()}{consumer()}}
+{\footnotesize\ttfamily void consumer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_safe_buffer}{Safe\+Buffer}} $>$}]{stack,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_semaphore}{Semaphore}} $>$}]{mutex,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_semaphore}{Semaphore}} $>$}]{consumer,  }\item[{int}]{num\+Loops }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+$<$ Launch the threads ~\newline
+
+
+$<$ Launch the threads ~\newline
+
+
+Definition at line 79 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a00660f0d55b4731f42a5ef5fbf527917}\label{main_8cpp_a00660f0d55b4731f42a5ef5fbf527917}} 
+\index{main.cpp@{main.cpp}!producer@{producer}}
+\index{producer@{producer}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{producer()}{producer()}}
+{\footnotesize\ttfamily void producer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_safe_buffer}{Safe\+Buffer}} $>$}]{stack,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_semaphore}{Semaphore}} $>$}]{mutex,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_semaphore}{Semaphore}} $>$}]{consumer,  }\item[{int}]{num\+Loops }\end{DoxyParamCaption})}
+
+
+
+Definition at line 44 of file main.\+cpp.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_ac6027d2dbb9ac08b3b6729341c0bcf8f}\label{main_8cpp_ac6027d2dbb9ac08b3b6729341c0bcf8f}} 
+\index{main.cpp@{main.cpp}!character@{character}}
+\index{character@{character}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{character}{character}}
+{\footnotesize\ttfamily char character}
+
+
+
+Definition at line 33 of file main.\+cpp.
+

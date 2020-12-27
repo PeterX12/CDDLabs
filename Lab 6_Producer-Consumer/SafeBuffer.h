@@ -1,49 +1,42 @@
-/* SafeBuffer.h --- 
- * 
- * Filename: SafeBuffer.h
- * Description: 
- * Author: Joseph
- * Maintainer: 
- * Created: Tue Jan  8 12:30:23 2019 (+0000)
- * Version: 
- * Package-Requires: ()
- * Last-Updated: Tue Jan  8 12:30:25 2019 (+0000)
- *           By: Joseph
- *     Update #: 1
- * URL: 
- * Doc URL: 
- * Keywords: 
- * Compatibility: 
- * 
+/*
+  This work is licensed under the Creative Commons Attribution-NonCommercial-   NoDerivatives 4.0 International License. To view a copy of this license, vi   si t http://creativecommons.org/licenses/by-nc-nd/4.0/.
+*/
+/*! \mainpage Lab 6 - Producer-Consumer
+ * \author Peter Lucan, 4th Year Software Development student at IT Carlow,C00228946, c00228956@itcarlow.ie
+ * \date 20/12/2020
+ * \copyright Creative Commons Attribution-NonCommercial- NoDerivatives 4.0 International License
+ * \section desc_sec Decription
+ *
+ * Description: Implementation of a Stack.
+ *
+ *
+ * \section dep_Sec Dependencies
+ * gcc v 7.5.0 or greater
+ Make
+ *
+ * \section install_sec Installation
+ * run "make ALL in directory with code."
+ *
+ *
+ *
  */
 
-/* Commentary: 
- * 
- * 
- * 
- */
+#include <array>
 
-/* Change Log:
- * 
- * 
- */
+class SafeBuffer{
+    int top;
+    int maxSize;
+    char stack[10];
 
-/* This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or (at
- * your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License
- * along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
- */
+    public: SafeBuffer(){
+        top = -1;
+        maxSize = 10;
+    }
 
-/* Code: */
-
-
-
-/* SafeBuffer.h ends here */
+    ~SafeBuffer();
+    void push(char letter);
+    void pop(char letter);
+    void peek();
+    bool isEmpty();
+    bool isFull();
+};

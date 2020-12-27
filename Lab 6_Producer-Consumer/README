@@ -1,10 +1,18 @@
-The README file is a text file that explains what a project is.
-It should contain information on
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
 
-1. Project Licence
-2. Authors of Project
-3. How to install project
-4. List of any required Libraries, platform issues, etc.
-5. TO DO section listing items that need to be completed (errors, missing features etc.)
-6. List of files and what they contain
-7. Any other relevent information
+Title: Lab 6 - Producer-Consumer
+
+Author: Peter Lucan, 4th Year Software Development student at IT Carlow, 
+Student Number: C00228946
+Email: c00228946@itcarlow.ie
+
+Description: This is the sixth lab. This lab uses mutex locks to demonstrate the producer consumer problem. Letters are pushed and popped from a stack and only one thread can access the stack at a single time.
+Dependencies:
+gcc v 7.5.0 or greater
+Make
+
+Install:
+run "make ALL in directory with code."
+
+Usage:
+type "./prodCon" to run
